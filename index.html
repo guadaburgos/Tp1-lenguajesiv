@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TP N°1 - Lenguajes IV</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <h1>Trabajo Práctico N°1</h1>
+        <h2>Lenguajes IV</h2>
+
+        <!-- GEOLOCALIZACIÓN -->
+        <section class="tarjeta">
+
+            <h3>Mi ubicación</h3>
+
+            <p id="estadoUbicacion">
+                Obteniendo ubicación...
+            </p>
+
+            <div id="datosUbicacion">
+
+                <p>
+                    <strong>Latitud:</strong>
+                    <span id="latitud">---</span>
+                </p>
+
+                <p>
+                    <strong>Longitud:</strong>
+                    <span id="longitud">---</span>
+                </p>
+
+                <p>
+                    <strong>Exactitud:</strong>
+                    <span id="exactitud">---</span>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CARGA DE IMAGEN -->
+        <section class="tarjeta">
+
+            <h3>Subir imagen</h3>
+
+            <p>
+                Seleccione una imagen desde su dispositivo.
+            </p>
+
+            <input
+                type="file"
+                id="archivo"
+                accept="image/*"
+            >
+
+            <p id="mensajeArchivo"></p>
+
+            <div class="contenedor-imagen">
+
+                <img
+                    id="imagen"
+                    alt="Imagen seleccionada"
+                >
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
